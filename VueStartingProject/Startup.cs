@@ -25,7 +25,7 @@ namespace VueStartingProject
             // In production, the Vue files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/dist";
+                configuration.RootPath = "clientapp/dist";
             });
         }
 
@@ -56,7 +56,7 @@ namespace VueStartingProject
 
             app.UseSpa(spa =>
             {
-                spa.Options.SourcePath = "ClientApp";
+                spa.Options.SourcePath = "clientapp";
 
                 if (env.IsDevelopment())
                 {
